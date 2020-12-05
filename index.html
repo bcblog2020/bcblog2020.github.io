@@ -7,6 +7,22 @@
   <title>编程博客·Charlie</title>
 <link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/mdui/0.4.3/css/mdui.min.css">
 </head>
+  <style>
+  .yy{
+        border-radius: 15px;!important
+  }
+  .s-12{
+    -webkit-box-shadow:0 7px 8px -4px rgba(0,0,0,.1),0 12px 17px 2px rgba(0,0,0,.07),0 5px 22px 4px rgba(0,0,0,.06);box-shadow:0 7px 8px -4px rgba(0,0,0,.1),0 12px 17px 2px rgba(0,0,0,.07),0 5px 22px 4px rgba(0,0,0,.06)
+  }
+  .zw ::selection{
+      background-color: #3F51B5;
+      color:white;!important;
+    }
+  .mdui-typo ::selection{
+      background-color:  #E91E63;
+      color:white;!important;
+    }
+</style>
 
     <div class="mdui-appbar">
   <div class="mdui-toolbar mdui-color-indigo">
@@ -40,24 +56,28 @@
 
   </body>
      <br>
-  <center> <div class="mdui-typo">
- <button class="mdui-btn mdui-btn-dense mdui-color-theme-accent mdui-ripple" mdui-dialog="{target: '#example-2'}">关于站长</button>
-  </center>
-  <div class="mdui-dialog" id="example-2">
-    <div class="mdui-dialog-title">关于站长</div>
-    <div class="mdui-dialog-content">&nbsp;&nbsp;本站站长——Charlie，初一学生，编程爱好者，菜鸟一枚
-      <br><br>&nbsp;&nbsp;以下为部分编程简历：
-<br>&nbsp;&nbsp;2019.6.29 开始学习Scratch，第一个作品（打蝙蝠）
-<br>&nbsp;&nbsp;2019.9-12 参加一次市Scratch比赛（成绩很差很差……），一次蓝桥杯大赛（才……三等奖），12月26日参加市第三届科技节（项目金奖）
-<br>&nbsp;&nbsp;2019.6-2020.3 常研究学习Scratch编程，作品（作业）一大堆，使用的是网易卡搭（校园账号）
-<br>&nbsp;&nbsp;2020.1.1 加入编程猫社区
-<br>&nbsp;&nbsp;2020.2 通过编程猫社区群认识what，加入编程猫社区黑洞工作室（至今没做出啥贡献……哈哈），成为what的徒弟（自此开始使用github+mdui，且后主学习HTML编程）
-<br>&nbsp;&nbsp;2020.8 加入Scratch小码王社区，创建TY工作室（此前疫情寒假期间弄过，后因特殊原因解散）
-<br><br>&nbsp;&nbsp;<center>2020.12.4 ·创建本站·</center>
- <br>&nbsp;&nbsp;QICQ：2768069864 欢迎私信</div>
-     <div class="mdui-dialog-actions">
-    <button class="mdui-btn mdui-ripple" mdui-dialog-close>OK</button>
-  </div> </div>
+  <div class="mdui-container-fluid mdui-m-l-1 mdui-m-r-1 s-12 yy mdui-color-white mdui-m-t-1 zw"> 
+   <div class="mdui-list"> 
+    <div class="mdui-textfield"> 
+     <i class="mdui-icon material-icons">search</i> 
+     <input class="mdui-textfield-input" type="text" placeholder="搜索(支持拼音)" id="l1" onKeyUp = "set_()"/> 
+    </div> 
+    <li class="mdui-subheader">子站</li> 
+    <a href="http://api.bu40.com" class="mdui-list-item mdui-ripple" target="_blank" id="a1">自制API</a> 
+    <a href="http://blog.bu40.com" class="mdui-list-item mdui-ripple" target="_blank" id="a2">博客</a> 
+    <li class="mdui-subheader">提供的工具</li> 
+    <a href="https://www.bu40.com/wyy.html" class="mdui-list-item mdui-ripple" target="_blank" id="a3">音乐下载器(仅限网易云)</a> 
+    <a href="https://www.bu40.com/dxx.html" class="mdui-list-item mdui-ripple" target="_blank" id="a4">文本大小写转换器</a> 
+    <a href="https://www.bu40.com/txtk.html" class="mdui-list-item mdui-ripple" target="_blank" id="a5">文本去除格式</a> 
+    <a href="https://www.bu40.com/emogi.html" class="mdui-list-item mdui-ripple" target="_blank" id="a6">emoji大全</a> 
+    <a href="https://www.bu40.com/txtl.html" class="mdui-list-item mdui-ripple" target="_blank" id="a7">文本行左/右边删去/保留N个字符</a> 
+    <a href="https://www.bu40.com/qkh.html" class="mdui-list-item mdui-ripple" target="_blank" id="a8">文本行去空行</a> 
+    <a href="https://www.bu40.com/txtj.html" class="mdui-list-item mdui-ripple" target="_blank" id="a9">文本行左/右批量添加字符串</a> 
+    <a href="https://www.bu40.com/hb.html" class="mdui-list-item mdui-ripple" target="_blank" id="a10">文本列合并</a> 
+    <a href="https://www.bu40.com/cf.html" class="mdui-list-item mdui-ripple" target="_blank" id="a11">文本列拆分</a> 
+    <a href="https://www.bu40.com/html.html" class="mdui-list-item mdui-ripple" target="_blank" id="a11">html在线运行</a> 
+   </div> 
+  </div>
   
   
      <div class="mdui-typo mdui-container-fluid mdui-m-t-3 mdui-p-t-1 mdui-p-r-2 mdui-p-l-2 mdui-color-indigo mdui-center"> 
@@ -79,5 +99,82 @@
    <script type="text/javascript" src="//quote.51.la/q?id=20606147&amp;mb=5"></script> 
    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2"></script> 
    <script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
+  
+    <script>
+    //搜索
+      var py=["zizhiapi","boke","yinyuexiazaiqiwangyiyun","wenbendaxiaoxiezhuanhuanqi","wenbenquchugeshi","emojidaquan","wenbenhangzuoyoubianshanqubaoliungezifu","wenbenhangqukonghang","wenbenhangzuoyoupiliangtianjiazifuchuan","wenbenliehebing","wenbenliechaifen"];
+      var yx=["zz","bk","yyxzq","wbdxxzhq","wbqcgs","dq","wbhzybsqblzf","wbhqkh","wbhzybltjzfc","wblhb","wblcf"];
+      function set_(){
+      var a=$("#l1").val().toUpperCase();
+      var i=1;
+      if(a!=""){
+        $("li").hide();
+        $(".mdui-list-item").hide(); 
+        var h="#a"+i;
+        while($(h).text()!=""){
+          if($(h).text().toUpperCase().search(a)!=-1 || py[i-1].toUpperCase().search(a)!=-1 || yx[i-1].toUpperCase().search(a)!=-1)
+          $(h).show();
+          else
+          $(h).hide();
+          i++;
+          h="#a"+i;
+      }
+      } 
+      else{
+        $("li").show();
+        $(".mdui-list-item").show();
+      } 
+    }
+      document.getElementById("d1").innerHTML='<a href=\'http://connect.qq.com/widget/shareqq/index.html?url='+window.location.href
+    +'&title='+document.title+'&source='+document.title+
+    '&desc=&pics=https://s1.ax1x.com/2020/08/29/d7nGdg.png&summary=""\' target="_blank">'+
+    '<img src="https://cdn.jsdelivr.net/gh/52black/52black.github.io/img/QQ.svg" width="50" height="50"></a>';
+    document.getElementById("d2").innerHTML='<a href=\'http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url='+window.location.href
+    +'&title='+document.title+'&desc=&summary=&site='+document.title+
+    '&pics=https://s1.ax1x.com/2020/08/29/d7nGdg.png&summary=""\' target="_blank">'+
+    '<img src="https://cdn.jsdelivr.net/gh/52black/52black.github.io/img/kj.svg" width="50" height="50"></a>';
+    function fs() { 
+        url=window.location.href; 
+        title=document.title; 
+        if (window.sidebar) 
+            window.sidebar.addPanel(title,url,""); 
+        else if(document.all) 
+            window.external.AddFavorite(url,title); 
+        else 
+            return true; 
+    } 
+      document.getElementById('share').addEventListener('open.mdui.dialog', function () {
+        tab.handleUpdate();
+      });
+      var wd=0;
+      var qd=0;
+      $(document).ready(function(){
+        $("#wds").hide();
+        $("#qds").hide();
+      });
+    $.ajax({
+        type:'GET',
+        url:'https://api.nowtime.cc/v1/today_in_history',
+        dataType:'json',
+      //  data:{url:"http://sss.com"},
+        async:false,
+        success:function(data){
+            var o = eval(data).data;
+            var l=o.push();
+            var h="";
+            var date = new Date(); 
+            for (var i=0;i<l;i++){
+              h+=o[i].year+'年 <span class="mdui-text-color-black-secondary">'+o[i].data+"</span><br>";
+              if(date.getMonth()+1 != o[i].month || date.getDate() != o[i].day){
+                h="暂时无法加载数据，可能是你的时间设置不对或其他错误";
+                break;
+              }
+            }
+            $("#lss").html(h);
+        }
+    });
+    ip2="你的ip是"+returnCitySN.cip+" ,你在"+returnCitySN.cname;
+    $("#ip").text(ip2);
+  </script>  
   
   </html>
