@@ -142,25 +142,6 @@
         type:'GET',
         url:'https://api.nowtime.cc/v1/today_in_history',
         dataType:'json',
-      //  data:{url:"http://sss.com"},
-        async:false,
-        success:function(data){
-            var o = eval(data).data;
-            var l=o.push();
-            var h="";
-            var date = new Date(); 
-            for (var i=0;i<l;i++){
-              h+=o[i].year+'年 <span class="mdui-text-color-black-secondary">'+o[i].data+"</span><br>";
-              if(date.getMonth()+1 != o[i].month || date.getDate() != o[i].day){
-                h="暂时无法加载数据，可能是你的时间设置不对或其他错误";
-                break;
-              }
-            }
-            $("#lss").html(h);
-        }
-    });
-    ip2="你的ip是"+returnCitySN.cip+" ,你在"+returnCitySN.cname;
-    $("#ip").text(ip2);
   </script>  
   
   </html>
