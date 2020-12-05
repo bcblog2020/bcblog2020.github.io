@@ -33,7 +33,21 @@
   </div>
 </div>
         <script src="https://cdn.jsdelivr.net/gh/whablog/whablog.github.io/libs/others/clicklove.js" async="async"></script>
-  
+
+    <br>
+      <center>             <span class="mdui-typo-title mdui-text-color-purple" id="subtitle"></span>
+                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+                <script>
+                    var typed = new Typed("#subtitle", {
+                        strings: ['欢迎访问 Charlie的编程博客','联系QQ：2768069864'],
+                        startDelay: 300,
+                        typeSpeed: 150,
+                        loop: true,
+                        backSpeed: 50,
+                        showCursor: true
+                    });
+                </script> </center>
+                
     </div>
 
 
@@ -142,6 +156,25 @@
         type:'GET',
         url:'https://api.nowtime.cc/v1/today_in_history',
         dataType:'json',
+      //  data:{url:"http://sss.com"},
+        async:false,
+        success:function(data){
+            var o = eval(data).data;
+            var l=o.push();
+            var h="";
+            var date = new Date(); 
+            for (var i=0;i<l;i++){
+              h+=o[i].year+'年 <span class="mdui-text-color-black-secondary">'+o[i].data+"</span><br>";
+              if(date.getMonth()+1 != o[i].month || date.getDate() != o[i].day){
+                h="暂时无法加载数据，可能是你的时间设置不对或其他错误";
+                break;
+              }
+            }
+            $("#lss").html(h);
+        }
+    });
+    ip2="你的ip是"+returnCitySN.cip+" ,你在"+returnCitySN.cname;
+    $("#ip").text(ip2);
   </script>  
   
   </html>
